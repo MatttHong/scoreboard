@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Matthew Hong" />
+    <meta
+      name="description"
+      content="This is a scoreboard that implements JS"
+    />
+    <link rel="stylesheet" href="../Css files/style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <h3>HOME</h3>
+        <h2 id="scoreHome">0</h2>
+        <div>
+          <button onclick="addOne('a')">+1</button>
+          <button onclick="addTwo('a')">+2</button>
+          <button onclick="addThree('a')">+3</button>
+        </div>
+      </div>
+      <div class="column">
+        <h3>GUEST</h3>
+        <h2 id="scoreGuest">0</h2>
+        <div>
+          <button onclick="addOne('b')">+1</button>
+          <button onclick="addTwo('b')">+2</button>
+          <button onclick="addThree('b')">+3</button>
+        </div>
+      </div>
+    </div>
+    <button id="reset" onclick="reset()">Reset</button>
+    <script src="../JS files/index.js"></script>
+  </body>
+</html>
